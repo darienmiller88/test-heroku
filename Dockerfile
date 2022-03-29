@@ -16,8 +16,8 @@ COPY . ./
 
 ENV PORT=8080
 
-RUN go build -o bin/app
+RUN go build -o bin/test
 
 EXPOSE 8080
 
-CMD [ "/app" ]
+CMD [ "./bin/test" ]

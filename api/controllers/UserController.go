@@ -16,7 +16,7 @@ func (u *UserController) Init(){
 
 	u.Router.Get("/", func(res http.ResponseWriter, req *http.Request) {
 		render.JSON(res, req, map[string]interface{}{
-			"message": "Hello!",
+			"message": "Hello! From Docker 😊",
 		})
 	})
 }
